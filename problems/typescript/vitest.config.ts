@@ -5,17 +5,17 @@ export default defineConfig({
   test: {
     globals: true,
     environment: 'node',
-    include: ['../problems/**/*.test.ts'],
+    include: ['**/*.test.ts'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
-      include: ['../problems/**/typescript/**/*.ts'],
-      exclude: ['../problems/**/typescript/**/*.test.ts'],
+      include: ['**/*.ts'],
+      exclude: ['**/*.test.ts', 'node_modules/**', 'vitest.config.ts'],
     },
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, '../problems'),
+      '@': path.resolve(__dirname, '.'),
     },
   },
 });

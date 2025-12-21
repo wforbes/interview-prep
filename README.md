@@ -8,10 +8,15 @@ A comprehensive repository for technical interview preparation focusing on data 
 
 ```
 interview-prep/
-├── problems/              # DSA problems organized by topic
+├── problems/              # DSA problems organized by language
+│   ├── typescript/        # TypeScript solutions (primary)
+│   ├── python/            # Python solutions
+│   ├── golang/            # Go solutions
+│   ├── java/              # Java solutions
+│   ├── c/                 # C solutions
+│   └── cpp/               # C++ solutions
 ├── system-design/         # System design study notes
-├── job-applications/      # Application tracking
-└── {language-configs}/    # Language-specific configs
+└── job-applications/      # Application tracking
 ```
 
 ## DSA Problem Topics
@@ -38,19 +43,20 @@ Problems are organized by topic/pattern in the order of study:
 
 ## Problem Structure
 
-Each problem follows this structure:
+Each language has its own directory with topic-organized problems:
 
 ```
-problems/{topic}/{problem-name}/
-├── README.md              # Problem description, approach, notes, complexity
-├── typescript/
-│   ├── solution.ts
-│   └── solution.test.ts
-├── python/
-│   ├── solution.py
-│   └── test_solution.py
-└── {other-languages}/
+problems/{language}/{topic}/{leetcode-number}_{problem-name}/
+├── solution.{ext}         # Solution implementation
+└── solution.test.{ext}    # Unit tests
+
+Example:
+problems/typescript/1-arrays-hashing/0001_two_sum/
+├── solution.ts
+└── solution.test.ts
 ```
+
+Problems are numbered with LeetCode problem numbers (e.g., `0001_two_sum`, `0217_contains_duplicate`) to maintain consistency and easy reference.
 
 ## Getting Started
 
@@ -58,7 +64,7 @@ problems/{topic}/{problem-name}/
 
 ```bash
 # Install dependencies
-cd typescript
+cd problems/typescript
 bun install
 
 # Run all tests
@@ -71,30 +77,37 @@ bun test:ui
 bun test:coverage
 
 # Run specific topic tests
-bun test problems/arrays-hashing
+bun test 1-arrays-hashing
 
 # Run specific problem tests
-bun test problems/arrays-hashing/two-sum
+bun test 1-arrays-hashing/0001_two_sum
 ```
 
 ### Python (pytest)
 
 ```bash
+# Set up virtual environment (first time only)
+cd problems/python
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
 # Install dependencies
-cd python
 pip install -r requirements.txt
 
 # Run all tests
 pytest
 
 # Run specific topic tests
-pytest ../problems/arrays-hashing
+pytest 1-arrays-hashing
 
 # Run specific problem tests
-pytest ../problems/arrays-hashing/two-sum
+pytest 1-arrays-hashing/0001_two_sum
 
 # Run with coverage
-pytest --cov=../problems
+pytest --cov=.
+
+# Exit from venv, done with python
+deactivate
 ```
 
 ### Go
@@ -123,18 +136,24 @@ gradle test
 
 ## Adding a New Problem
 
-1. Create problem directory: `problems/{topic}/{problem-name}/`
-2. Add `README.md` with problem description, approach, and complexity analysis
-3. Create language-specific subdirectories (e.g., `typescript/`, `python/`)
-4. Implement solution and tests in each language
+1. Create problem directory in the language folder: `problems/{language}/{topic}/{number}_{name}/`
+2. Implement solution and tests
+3. Optionally add notes as comments or in a separate markdown file
 
-### Example:
+### Example (TypeScript):
 
 ```bash
-mkdir -p problems/arrays-hashing/contains-duplicate/typescript
-touch problems/arrays-hashing/contains-duplicate/README.md
-touch problems/arrays-hashing/contains-duplicate/typescript/solution.ts
-touch problems/arrays-hashing/contains-duplicate/typescript/solution.test.ts
+mkdir -p problems/typescript/1-arrays-hashing/0242_valid_anagram
+touch problems/typescript/1-arrays-hashing/0242_valid_anagram/solution.ts
+touch problems/typescript/1-arrays-hashing/0242_valid_anagram/solution.test.ts
+```
+
+### Example (Python):
+
+```bash
+mkdir -p problems/python/1-arrays-hashing/0242_valid_anagram
+touch problems/python/1-arrays-hashing/0242_valid_anagram/solution.py
+touch problems/python/1-arrays-hashing/0242_valid_anagram/test_solution.py
 ```
 
 ## System Design
