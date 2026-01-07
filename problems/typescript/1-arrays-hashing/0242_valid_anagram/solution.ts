@@ -1,3 +1,7 @@
+/**
+ * Valid Anagram - Two Maps Approach
+ * Time: O(n), Space: O(n)
+ */
 // first: 9/17/25
 // review: 12/9/25
 // review: 12/20/25
