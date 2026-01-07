@@ -1,6 +1,6 @@
 /**
  * Contains Duplicate
- * Time: ?, Space: ?
+ * Time: O(n), Space: O(n)
  */
 export function containsDuplicate(nums: number[]): boolean {
 	// init a set to keep track of values we've seen
@@ -17,4 +17,4 @@ export function containsDuplicate(nums: number[]): boolean {
 	}
 	// return false, no dupe found
 	return false;
-};
+}
