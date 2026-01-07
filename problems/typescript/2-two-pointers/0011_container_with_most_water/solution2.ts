@@ -1,13 +1,16 @@
 /**
- * Container With Most Water - Alternative approach
- * Time: O(n^2), Space: O(1)
+ * Container With Most Water - Exhaustive Search Approach
+ * Time: O(n²), Space: O(1)
+ *
+ * Checks all pairs by sweeping j for each i position
+ * Less efficient but demonstrates brute force approach
  */
 export function maxArea(height: number[]): number {
 	let i = 0;
 	let j = height.length - 1;
 	let area = 0;
 
-	while (i < j) {
+	while (i < height.length - 1) {
 		const x = j - i;
 		const y = Math.min(height[i], height[j]);
 
@@ -15,12 +18,13 @@ export function maxArea(height: number[]): number {
 			area = x * y;
 		}
 
-		// Reset j and increment i if reached middle
-		if (j <= height.length / 2 + 1) {
-			j = height.length + 1;
-			i++;
-		}
 		j--;
+
+		// When j reaches i, move to next i and reset j to end
+		if (j <= i) {
+			i++;
+			j = height.length - 1;
+		}
 	}
 
 	return area;
