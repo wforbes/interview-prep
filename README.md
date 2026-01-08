@@ -106,6 +106,9 @@ pytest 1-arrays-hashing/0001_two_sum
 # Run with coverage
 pytest --cov=.
 
+# move to working directory and run pytest with watch
+ptw .
+
 # Exit from venv, done with python
 deactivate
 ```
