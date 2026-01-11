@@ -5,7 +5,7 @@
  * Checks all pairs by sweeping j for each i position
  * Less efficient but demonstrates brute force approach
  */
-export function maxArea(height: number[]): number {
+export function maxArea2(height: number[]): number {
 	let i = 0;
 	let j = height.length - 1;
 	let area = 0;

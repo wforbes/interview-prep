@@ -4,8 +4,9 @@
  * Time: O(n), Space: O(1)
  *
  * Two pointer approach - move pointer with smaller height
+ * - Reviewed and resolved 01/10/2026
  */
-export function maxArea2(height: number[]): number {
+export function maxArea(height: number[]): number {
 	let left = 0;
 	let right = height.length - 1;
 	let maxArea = 0;
