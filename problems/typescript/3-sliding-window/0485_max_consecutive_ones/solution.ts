@@ -17,7 +17,6 @@ export function findMaxConsecutiveOnes(nums: number[]): number {
 		maxSeries = Math.max(maxSeries, b - a);
 		a = b + 1;
 		b = a;
-		console.log(`end of series ${a} ${b}`);
 	}
 	return maxSeries;
 }
