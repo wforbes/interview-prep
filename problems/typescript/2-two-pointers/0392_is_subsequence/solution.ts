@@ -3,6 +3,7 @@
  * Time: O(n), Space: O(1)
  *
  * Most efficient solution using two pointers
+ * first solved 9/23/25
  */
 export function isSubsequence(s: string, t: string): boolean {
 	if (s.length === 0) return true;
