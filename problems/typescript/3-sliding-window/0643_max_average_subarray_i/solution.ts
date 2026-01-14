@@ -1,3 +1,10 @@
+/**
+ * 643. Maximum Average Subarray I
+ * https://leetcode.com/problems/maximum-average-subarray-i
+ * Time: O(n), Space: O(1)
+ *
+ * Sliding Window Approach
+ */
 export function findMaxAverage(nums: number[], k: number): number {
 	if (nums.length < k) {
 		return 0;
@@ -6,15 +13,15 @@ export function findMaxAverage(nums: number[], k: number): number {
 	// get sum of first window
 	for (let i = 0; i < k; i++) {
 		maxSum += nums[i];
-		console.log(`adding... ${nums[i]} to maxSum=${maxSum}`);
 	}
 	let windowSum = maxSum;
+	// slide the window
 	for (let i = k; i < nums.length; i++) {
+		// add next element, remove first element of prev window
 		windowSum += nums[i] - nums[i - k];
-		//windowSum += nums[i];
-		console.log(`${i} windowSum... ${windowSum}`);
+		// update maxSum if needed
 		maxSum = Math.max(maxSum, windowSum);
 	}
-	console.log(maxSum);
+	// return average of max sum, resulting in max average
 	return maxSum / k;
 }
