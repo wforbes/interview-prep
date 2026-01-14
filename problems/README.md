@@ -5,25 +5,46 @@ Track your progress across different topics and languages.
 ## Progress by Topic
 
 ### 1. Arrays & Hashing
-- [ ] 0001 - Two Sum
-- [ ] 0217 - Contains Duplicate
-- [ ] 0242 - Valid Anagram
-- [ ] 0049 - Group Anagrams
-- [ ] 0347 - Top K Frequent Elements
-- [ ] 0238 - Product of Array Except Self
-- [ ] 0036 - Valid Sudoku
-- [ ] 0128 - Longest Consecutive Sequence
-- [ ] 0271 - Encode and Decode Strings (Premium)
+- [x] 0344 - Reverse String
+- [x] XXXX - Vacuum Cleaner Route
+- [x] 0217 - Contains Duplicate
+- [x] 0242 - Valid Anagram
+- [x] 0383 - Ransom Note
+- [x] 0001 - Two Sum
+- [x] 0014 - Longest Common Prefix
+- [x] 0028 - Find the Index of the First Occurrence in a String
+- [x] 0049 - Group Anagrams
+- [x] 0347 - Top K Frequent Elements
+- [x] 0271 - Encode and Decode Strings (Premium)
+- [x] 0238 - Product of Array Except Self
+- [x] 0036 - Valid Sudoku
+- [x] 0054 - Spiral Matrix
+- [x] 0498 - Diagonal Traverse
+- [x] 0048 - Rotate Image
+- [x] 0128 - Longest Consecutive Sequence
+- [x] 1929 - Concatenation of Array
 
 ### 2. Two Pointers
-- [ ] 0125 - Valid Palindrome
-- [ ] 0167 - Two Sum II - Input Array Is Sorted
-- [ ] 0015 - 3Sum
-- [ ] 0011 - Container With Most Water
-- [ ] 0042 - Trapping Rain Water
+- [x] 0541 - Reverse String II
+- [x] 0151 - Reverse Words in a String
+- [x] 0392 - Is Subsequence
+- [x] 0345 - Reverse Vowels of a String
+- [x] 0125 - Valid Palindrome
+- [x] 0680 - Valid Palindrome II
+- [x] 0027 - Remove Element
+- [x] 0557 - Reverse Words in a String III
+- [x] 0026 - Remove Duplicates From Sorted Array
+- [x] 0080 - Remove Duplicates From Sorted Array II
+- [x] 0167 - Two Sum II - Input Array Is Sorted
+- [x] 0015 - 3Sum
+- [x] 0011 - Container With Most Water
+- [x] 0042 - Trapping Rain Water
 
 ### 3. Sliding Window
-- [ ] 0121 - Best Time to Buy and Sell Stock
+- [x] 0485 - Max Consecutive Ones
+- [x] 0345 - Max Average Subarray I
+- [x] 0121 - Best Time to Buy and Sell Stock
+- [x] 1456 - Max Number of Vowels in a Substring of Given Length
 - [ ] 0003 - Longest Substring Without Repeating Characters
 - [ ] 0424 - Longest Repeating Character Replacement
 - [ ] 0076 - Minimum Window Substring
@@ -36,8 +57,8 @@ Track your progress across different topics and languages.
 - [ ] 0974 - Subarray Sums Divisible by K
 
 ### 5. Stacks
-- [ ] 0020 - Valid Parentheses
-- [ ] 0155 - Min Stack
+- [x] 0020 - Valid Parentheses
+- [x] 0155 - Min Stack
 - [ ] 0150 - Evaluate Reverse Polish Notation
 - [ ] 0022 - Generate Parentheses
 - [ ] 0739 - Daily Temperatures
@@ -54,12 +75,12 @@ Track your progress across different topics and languages.
 - [ ] 0004 - Median of Two Sorted Arrays
 
 ### 7. Linked List
-- [ ] 0206 - Reverse Linked List
-- [ ] 0021 - Merge Two Sorted Lists
+- [x] 0206 - Reverse Linked List
+- [x] 0021 - Merge Two Sorted Lists
 - [ ] 0143 - Reorder List
 - [ ] 0019 - Remove Nth Node From End of List
 - [ ] 0138 - Copy List with Random Pointer
-- [ ] 0002 - Add Two Numbers
+- [x] 0002 - Add Two Numbers
 - [ ] 0141 - Linked List Cycle
 - [ ] 0287 - Find the Duplicate Number
 - [ ] 0146 - LRU Cache
@@ -121,7 +142,7 @@ Track your progress across different topics and languages.
 - [ ] 0743 - Network Delay Time
 
 ### 13. 1-D Dynamic Programming
-- [ ] 0070 - Climbing Stairs
+- [x] 0070 - Climbing Stairs
 - [ ] 0746 - Min Cost Climbing Stairs
 - [ ] 0198 - House Robber
 - [ ] 0213 - House Robber II
@@ -162,12 +183,8 @@ Track your progress across different topics and languages.
 - [ ] 0678 - Valid Parenthesis String
 - [ ] 0763 - Partition Labels
 
-### 17. Mixed Lists
-#### Blind 75
-- Track completion of Blind 75 problems
-
-#### Neetcode 150
-- Track completion of Neetcode 150 problems
+### 17. Mixed Solution Problems
+- [x] 0792 - Number of Matching Subsequences
 
 ## Language Completion
 
@@ -176,8 +193,48 @@ Track which problems you've solved in each language:
 | Problem | TypeScript | Python | Go | Java | C | C++ |
 |---------|-----------|--------|-----|------|---|-----|
 | 0001 Two Sum | ✓ | ✓ | - | - | - | - |
-| 0217 Contains Duplicate | ✓ | - | - | - | - | - |
+| 0002 Add Two Numbers | ✓ | - | - | - | - | - |
+| 0011 Container With Most Water | ✓ | ✓ | - | - | - | - |
+| 0014 Longest Common Prefix | ✓ | - | - | - | - | - |
+| 0015 3Sum | ✓ | - | - | - | - | - |
+| 0020 Valid Parentheses | ✓ | - | - | - | - | - |
+| 0021 Merge Two Sorted Lists | ✓ | - | - | - | - | - |
+| 0026 Remove Duplicates from Sorted Array | ✓ | ✓ | - | - | - | - |
+| 0027 Remove Element | ✓ | ✓ | - | - | - | - |
+| 0028 Find Index of First Occurrence | ✓ | ✓ | - | - | - | - |
+| 0036 Valid Sudoku | ✓ | - | - | - | - | - |
+| 0042 Trapping Rain Water | ✓ | - | - | - | - | - |
+| 0048 Rotate Image | ✓ | - | - | - | - | - |
+| 0049 Group Anagrams | ✓ | - | - | - | - | - |
+| 0054 Spiral Matrix | ✓ | - | - | - | - | - |
+| 0070 Climbing Stairs | ✓ | - | - | - | - | - |
+| 0080 Remove Duplicates from Sorted Array II | ✓ | - | - | - | - | - |
+| 0121 Best Time to Buy and Sell Stock | ✓ | - | - | - | - | - |
+| 0125 Valid Palindrome | ✓ | - | - | - | - | - |
+| 0128 Longest Consecutive Sequence | ✓ | - | - | - | - | - |
+| 0151 Reverse Words in a String | ✓ | - | - | - | - | - |
+| 0155 Min Stack | ✓ | - | - | - | - | - |
+| 0167 Two Sum II | ✓ | - | - | - | - | - |
+| 0206 Reverse Linked List | ✓ | - | - | - | - | - |
+| 0217 Contains Duplicate | ✓ | ✓ | - | - | - | - |
+| 0238 Product of Array Except Self | ✓ | - | - | - | - | - |
+| 0242 Valid Anagram | ✓ | ✓ | - | - | - | - |
+| 0271 Encode and Decode Strings | ✓ | - | - | - | - | - |
 | 0344 Reverse String | ✓ | ✓ | - | - | - | - |
+| 0345 Reverse Vowels of a String | ✓ | - | - | - | - | - |
+| 0347 Top K Frequent Elements | ✓ | - | - | - | - | - |
+| 0383 Ransom Note | ✓ | - | - | - | - | - |
+| 0392 Is Subsequence | ✓ | - | - | - | - | - |
+| 0485 Max Consecutive Ones | ✓ | - | - | - | - | - |
+| 0498 Diagonal Traverse | ✓ | - | - | - | - | - |
+| 0541 Reverse String II | ✓ | - | - | - | - | - |
+| 0557 Reverse Words in a String III | ✓ | - | - | - | - | - |
+| 0643 Max Average Subarray I | ✓ | - | - | - | - | - |
+| 0680 Valid Palindrome II | ✓ | ✓ | - | - | - | - |
+| 0792 Number of Matching Subsequences | ✓ | - | - | - | - | - |
+| 1456 Max Number of Vowels in a Substring | ✓ | - | - | - | - | - |
+| 1929 Concatenation of Array | ✓ | - | - | - | - | - |
+| XXXX Vacuum Cleaner Route | - | ✓ | - | - | - | - |
 
 ## Notes
 
