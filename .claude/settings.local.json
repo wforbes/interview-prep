@@ -3,7 +3,9 @@
     "allow": [
       "Bash(dir:*)",
       "Bash(python -m pytest:*)",
-      "Bash(tree:*)"
+      "Bash(tree:*)",
+      "Bash(ls:*)",
+      "Bash(xargs:*)"
     ]
   }
 }
