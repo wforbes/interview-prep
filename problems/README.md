@@ -58,8 +58,13 @@ Track your progress across different topics and languages.
 
 ### 5. Stacks
 - [x] 0020 - Valid Parentheses
-- [x] 0155 - Min Stack
+- [ ] 0844 - Backspace String Compare
+- [ ] 1047 - Remove All Adjacent Duplicates In String
+- [x] 0232 - Implement Queue using Stacks
 - [ ] 0150 - Evaluate Reverse Polish Notation
+- [x] 0155 - Min Stack
+- [ ] 0227 - Basic Calculator II
+- [x] 1700 - Number of Students Unable to Eat
 - [ ] 0022 - Generate Parentheses
 - [ ] 0739 - Daily Temperatures
 - [ ] 0853 - Car Fleet
@@ -75,6 +80,7 @@ Track your progress across different topics and languages.
 - [ ] 0004 - Median of Two Sorted Arrays
 
 ### 7. Linked List
+- [ ] 0707 - Design Linked List
 - [x] 0206 - Reverse Linked List
 - [x] 0021 - Merge Two Sorted Lists
 - [ ] 0143 - Reorder List
